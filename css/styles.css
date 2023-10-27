@@ -5,23 +5,37 @@
 }
 .developer-spotlight {
   background-color:rgb(182, 205, 189,.6);
+
+}
+.project-spotlight{
+  background-color: rgb(242, 249, 241);
+}
+.developer-spotlight, .project-spotlight{
   margin:50px auto;
   padding:25px;
   border-radius: var(--border-radius);
 }
+
 .profile-pic{
   max-width: 50%;
   display:block;
-  margin:0 auto;
+  margin:5px auto;
   border-radius: var(--border-radius);
 }
-.developer-spotlight h1, h3, h5{
+.weather, .hiking, .worldclock{
+  max-width:100%;
+  border-radius: var(--border-radius);
+}
+.developer-spotlight,.project-spotlight h1, h3, h5{
   text-align: center;
+}
+.developer-spotlight h1,h5{
+  margin-top: 10px;
 }
 .developer-spotlight a{
   display:block;
   margin:0 auto;
-  max-width:25%;
+  max-width:50%;
 }
 h3, p {
   font-family: var(--body-font);
@@ -35,12 +49,16 @@ h1,h5 {
   .developer-spotlight h3, h5{
     font-size: 18px;
   }
-  .developer-spotlight p{
+  .developer-spotlight, .project-spotlight p{
     text-align: center;
   }
 }
-@media(max-width:770px){
-.developer-spotlight a{
-    max-width:100%;
+
+@media(max-width:768px){
+  .developer-spotlight{
+    margin-bottom: 10px;
+  }
+  .project-spotlight{
+    margin-top: 0;
   }
 }
