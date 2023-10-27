@@ -1,7 +1,46 @@
-h1{
-  font-family:'Playfair Display', serif;
+:root{
+  --border-radius:10px;
+  --header-font:"Poppins", sans-serif;
+  --body-font:"Playfair Display", serif;
+}
+.developer-spotlight {
+  background-color:rgb(182, 205, 189,.6);
+  margin:50px auto;
+  padding:25px;
+  border-radius: var(--border-radius);
+}
+.profile-pic{
+  max-width: 50%;
+  display:block;
+  margin:0 auto;
+  border-radius: var(--border-radius);
+}
+.developer-spotlight h1, h3, h5{
+  text-align: center;
+}
+.developer-spotlight a{
+  display:block;
+  margin:0 auto;
+  max-width:25%;
+}
+h3, p {
+  font-family: var(--body-font);
 }
 
-h4{
-  font-family: 'Poppins', sans-serif;
+h1,h5 {
+  font-family: var(--header-font);
+}
+@media(max-width:500px){
+  
+  .developer-spotlight h3, h5{
+    font-size: 18px;
+  }
+  .developer-spotlight p{
+    text-align: center;
+  }
+}
+@media(max-width:770px){
+.developer-spotlight a{
+    max-width:100%;
+  }
 }
