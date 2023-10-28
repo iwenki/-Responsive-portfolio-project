@@ -3,12 +3,15 @@
   --header-font:"Poppins", sans-serif;
   --body-font:"Playfair Display", serif;
 }
+body{
+  background-color: rgb(210, 216, 218);
+}
 .developer-spotlight {
   background-color:rgb(182, 205, 189,.6);
-
 }
+
 .project-spotlight{
-  background-color: rgb(242, 249, 241);
+  background-color: rgb(242, 249, 241, .6);
 }
 .developer-spotlight, .project-spotlight{
   margin:50px auto;
