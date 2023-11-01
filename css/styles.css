@@ -1,95 +1,115 @@
-:root{
-  --border-radius:10px;
-  --header-font:"Poppins", sans-serif;
-  --body-font:"Playfair Display", serif;
+:root {
+  --border-radius: 10px;
+  --header-font: "Poppins", sans-serif;
+  --body-font: "Playfair Display", serif;
 }
-body{
+body {
   background-color: rgb(210, 216, 218);
 }
-.developer-spotlight {
-  background-color:rgb(182, 205, 189,.6);
+.developer-spotlight, .work-spotlight{
+  background-color: rgb(182, 205, 189, 0.6);
 }
-.about-header{
-  margin-top:75px;
+.general-header {
+  margin-top: 75px;
   text-align: center;
 }
-.about-content{
-  margin:30px;
+.about-content {
+  margin: 30px;
   line-height: 1.5;
 }
-.project-spotlight{
-  background-color: rgb(242, 249, 241, .6);
+.project-spotlight {
+  background-color: rgb(242, 249, 241, 0.6);
 }
-.developer-spotlight, .project-spotlight{
-  margin:50px auto;
-  padding:25px;
+.card-container{
+  line-height: 2;
+}
+.developer-spotlight,
+.project-spotlight, 
+.work-spotlight {
+  margin: 50px auto;
+  padding: 25px;
   border-radius: var(--border-radius);
 }
-.profile-pic{
+.profile-pic {
   max-width: 50%;
 }
-.about-pic{
-max-width: 75%;
+.about-pic {
+  max-width: 75%;
 }
-.bio{
-  margin:auto;
+.bio {
+  margin: auto;
+  background-color: rgb(242, 249, 241, 0.6);
+  border-radius: var(--border-radius);
+  padding: 15px;
 }
-.profile-pic,.about-pic{
-  display:block;
-  margin:5px auto;
+.profile-pic,
+.about-pic {
+  display: block;
+  margin: 5px auto;
   border-radius: var(--border-radius);
 }
-.weather, .hiking, .worldclock{
-  max-width:100%;
+.weather,
+.hiking,
+.worldclock,
+.billy-goat,
+.weather-v1 {
+  max-width: 100%;
   border-radius: var(--border-radius);
 }
-.developer-spotlight,.project-spotlight h1, h3, h5{
+.developer-spotlight,
+.project-spotlight h1,
+h3,
+h5 {
   text-align: center;
 }
-.developer-spotlight h1,h5{
+.developer-spotlight h1,
+h5 {
   margin-top: 10px;
 }
-.developer-spotlight a{
-  display:block;
-  margin:0 auto;
-  max-width:50%;
+.developer-spotlight a {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
 }
-.work-button a{
-  display:block;
-  margin:25px auto;
-  max-width:50%;
+.work-button a {
+  display: block;
+  margin: 25px auto;
+  max-width: 50%;
 }
-h3, p {
+h3,
+p {
   font-family: var(--body-font);
 }
 
-h1,h5 {
+h1,
+h5 {
   font-family: var(--header-font);
 }
-@media(max-width:500px){
-  
-  .developer-spotlight h3, h5{
+@media (max-width: 500px) {
+  .developer-spotlight h3,
+  h5 {
     font-size: 18px;
   }
-  .developer-spotlight, .project-spotlight p{
+  .developer-spotlight,
+  .project-spotlight p {
     text-align: center;
   }
-  .work-button a{
-max-width: 100%;
-}
+  .work-button a {
+    max-width: 100%;
+  }
 }
 
-@media(max-width:768px){
-  .developer-spotlight{
+@media (max-width: 768px) {
+  .developer-spotlight {
     margin-bottom: 10px;
   }
-  .project-spotlight{
+  .project-spotlight {
     margin-top: 0;
   }
-  .about-pic{
+  .about-pic {
     margin-bottom: 20px;
   }
-  .bio{
+  .bio {
     text-align: center;
-  } 
+  }
 }
