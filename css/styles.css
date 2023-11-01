@@ -9,7 +9,14 @@ body{
 .developer-spotlight {
   background-color:rgb(182, 205, 189,.6);
 }
-
+.about-header{
+  margin-top:75px;
+  text-align: center;
+}
+.about-content{
+  margin:30px;
+  line-height: 1.5;
+}
 .project-spotlight{
   background-color: rgb(242, 249, 241, .6);
 }
@@ -18,9 +25,16 @@ body{
   padding:25px;
   border-radius: var(--border-radius);
 }
-
 .profile-pic{
   max-width: 50%;
+}
+.about-pic{
+max-width: 75%;
+}
+.bio{
+  margin:auto;
+}
+.profile-pic,.about-pic{
   display:block;
   margin:5px auto;
   border-radius: var(--border-radius);
@@ -40,6 +54,11 @@ body{
   margin:0 auto;
   max-width:50%;
 }
+.work-button a{
+  display:block;
+  margin:25px auto;
+  max-width:50%;
+}
 h3, p {
   font-family: var(--body-font);
 }
@@ -55,6 +74,9 @@ h1,h5 {
   .developer-spotlight, .project-spotlight p{
     text-align: center;
   }
+  .work-button a{
+max-width: 100%;
+}
 }
 
 @media(max-width:768px){
@@ -64,4 +86,10 @@ h1,h5 {
   .project-spotlight{
     margin-top: 0;
   }
+  .about-pic{
+    margin-bottom: 20px;
+  }
+  .bio{
+    text-align: center;
+  } 
 }
