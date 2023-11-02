@@ -63,8 +63,7 @@ body {
 .worldclock,
 .billy-goat,
 .weather-v1 {
-  max-width: 100%;
-  border-radius: var(--border-radius);
+  max-width:100%;
 }
 .developer-spotlight,
 .project-spotlight h1,
