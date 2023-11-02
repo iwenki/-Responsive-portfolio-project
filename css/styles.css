@@ -2,6 +2,8 @@
   --border-radius: 10px;
   --header-font: "Ubuntu", sans-serif;
   --body-font: "Playfair Display", serif;
+  --primary-color:rgb(182, 205, 189, 0.6);
+  --secondary-color:rgb(242, 249, 241, 0.6);
 }
 body {
   background-color: rgb(210, 216, 218);
@@ -9,7 +11,7 @@ body {
 
 .developer-spotlight,
 .work-spotlight {
-  background-color: rgb(182, 205, 189, 0.6);
+  background-color: var(--primary-color);
 }
 .general-header {
   margin-top: 75px;
@@ -20,7 +22,7 @@ body {
   line-height: 1.5;
 }
 .project-spotlight {
-  background-color: rgb(242, 249, 241, 0.6);
+  background-color: var(--secondary-color);
 }
 .card-container {
   line-height: 2;
@@ -41,7 +43,7 @@ body {
 .bio,
 .contact-info {
   margin: auto;
-  background-color: rgb(242, 249, 241, 0.6);
+  background-color: var(--secondary-color);
   border-radius: var(--border-radius);
   padding: 15px;
 }
@@ -102,6 +104,42 @@ h5 {
 }
 .icon:hover {
   transform: scale(1.5);
+}
+footer .consultation-box{
+  background-color:var(--primary-color);
+  border-radius: var(--border-radius);
+  padding:30px 120px;
+}
+footer .consultation-box h5{
+  font-size: 30px;
+}
+footer .consultation-box a{
+  margin-top: 20px;
+  margin-right: 40px;
+}
+footer .email-link{
+  text-decoration:none;
+  text-align:center;
+  font-size: 24px;
+  color:black;
+  font-family: var(--body-font);
+}
+footer .footer-links a{
+  margin:0 20px;
+  color:blue;
+  background-color:var(--secondary-color);
+  padding:10px 12px;
+  border-radius:50%;
+  font-size: 18px;
+  text-decoration: none;
+  transition:all 150ms ease-in-out;
+}
+footer .footer-links a:hover{
+color:white;
+background-color: var(--primary-color);
+}
+footer .email-link:hover{
+  text-decoration: underline;
 }
 @media (max-width: 500px) {
   .developer-spotlight h3,
