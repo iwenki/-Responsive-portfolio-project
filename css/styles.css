@@ -134,6 +134,9 @@ footer .footer-links a{
   text-decoration: none;
   transition:all 150ms ease-in-out;
 }
+footer p a{
+  text-decoration: none;
+}
 footer .footer-links a:hover{
 color:white;
 background-color: var(--primary-color);
