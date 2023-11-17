@@ -68,7 +68,7 @@ body {
   max-width:100%;
 }
 .developer-spotlight,
-.project-spotlight h1,
+.project-spotlight h1, h2,
 h3,
 h5 {
   text-align: center;
@@ -91,7 +91,7 @@ h3,
 p {
   font-family: var(--body-font);
 }
-h1,
+h1,h2,
 h5 {
   font-family: var(--header-font);
 }
