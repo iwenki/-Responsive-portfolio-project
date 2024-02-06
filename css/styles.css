@@ -60,6 +60,8 @@ body {
   margin: 5px auto;
   border-radius: var(--border-radius);
 }
+.generator,
+.photography,
 .weather,
 .hiking,
 .worldclock,
