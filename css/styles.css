@@ -40,6 +40,14 @@ body {
 .about-pic {
   max-width: 75%;
 }
+.tools{
+  text-align: center;
+  font-family: var(--header-font);
+  font-size: 20px;
+}
+.toolCon{
+  max-width:70%;
+}
 .bio,
 .contact-info {
   margin: auto;
@@ -130,7 +138,7 @@ footer .footer-links a{
   margin:0 20px;
   color:blue;
   background-color:var(--secondary-color);
-  padding:10px 12px;
+  padding:10px 15px;
   border-radius:50%;
   font-size: 18px;
   text-decoration: none;
